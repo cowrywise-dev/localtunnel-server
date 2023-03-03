@@ -26,5 +26,5 @@ jobs:
           username: cowrywise-dev
           password: ${{ secrets.TOKEN }}
           registry: docker.pkg.github.com
-          repository: cowrywise/localtunnel-server
+          repository: cowrywise/localtunnel-server/tunnel-build
           tag_with_ref: true
