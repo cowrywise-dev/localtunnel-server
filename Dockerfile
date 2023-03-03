@@ -7,8 +7,8 @@ COPY yarn.lock /app/
 
 RUN yarn install --production && yarn cache clean
 
-RUN sudo iptables -P INPUT ACCEPT
-RUN sudo iptables-save > /etc/network/iptables.rules
+RUN iptables -P INPUT ACCEPT
+RUN iptables-save > /etc/network/iptables.rules
 
 COPY . /app
 
