@@ -1,4 +1,4 @@
-FROM node:12.10-buster
+FROM node:22.8.0-bookworm-slim
 
 WORKDIR /app
 
